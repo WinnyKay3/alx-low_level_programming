@@ -1,13 +1,12 @@
 /* library stdlib and time included */
 
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
  * main -function
  *
- * Description: prints the alphabet lower case then upper case
+ * Description: prints all single digit numbers of base 10
  *
  * Return: returns (0) on success
  */
@@ -15,17 +14,10 @@
 int main(void)
 {
 	int i;
-	char c;
 
-	for (i = 97; i < 123; i++)
+	for (i = 0; i < 10; i++)
 	{
-		c = i;
-		putchar(c);
-	}
-	for (i = 65; i < 91; i++)
-	{
-		c = i;
-		putchar(c);
+		putchar(i + '0');
 	}
 
 	putchar('\n');
