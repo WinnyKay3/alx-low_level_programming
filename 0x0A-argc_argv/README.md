@@ -1,0 +1,1 @@
+ARGC - an integer value that represents the number of command-line arguments passed to the program ARGV - an array of strings, with each element of the array representing one of the command-line arguments
