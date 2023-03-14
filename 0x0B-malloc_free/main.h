@@ -1,7 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
- * Desc: file containing all prototypes used in 0x0B malloc free directory.
+ *
+ * Desc: header file containing all prototypes and functions used in 0x0B- malloc free directory.
+ *
  */
 int _putchar(char c)
 char *create_array(unsigned int size, char c);
