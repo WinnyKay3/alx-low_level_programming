@@ -1,11 +1,13 @@
 #ifndef CALC_H
 #define CALC_H
-/*
- * Desc: header file containing all structures and prototypes
- * struct op - a struct op
- * @op: the operator
- * @f: the associated function.
+
+/**
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
  */
+
 typedef struct op
 {
 	char *op;
