@@ -1,22 +1,26 @@
-extern printf
+section .data
+    hello db 'Hello, Holberton', 0
+    newline db 10, 0
 
 section .text
-   global main
+    global main
+    extern printf
 
 main:
-   push rbp
+    push rbp
+    mov rbp, rsp
+    
+    push qword hello
+    call printf
+    add rsp, 8 ; remove argument from stack
 
-   mov rdi,fmt
-   mov rsi,msg
-   mov rax,0
-   call printf
-
-   pop rbp
-
-   mov rax,0
-   ret
-
-section .data
-   msg: db "Hello, Holberton", 0
-   fmt: db "%s", 10, 0
+    push qword newline
+    call printf
+    add rsp, 8 ; remove argument from stack
+    
+    mov rsp, rbp
+    pop rbp
+    
+    xor eax, eax ; return 0
+    ret
 
