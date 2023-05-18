@@ -5,7 +5,7 @@
  * delete_dnodeint_at_index - gets and deletes 9th node
  * @head: head node
  * @index: 9th node
- * Return: 1 if success, 0 if not
+ * Return: 1 if success, otherwise 0
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
